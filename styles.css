@@ -1,0 +1,38 @@
+/* 1. Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --bg-color: #0f172a;       
+  --card-bg: #1e293b;        
+  --text-main: #f8fafc;     
+  --text-muted: #94a3b8;    
+  --accent: #38bdf8;     
+  --font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-family);
+  line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+   
+}
+
