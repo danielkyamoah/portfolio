@@ -6,11 +6,11 @@
 }
 
 :root {
-  --bg-color: #0f172a;
+  /* --bg-color: #0f172a;
   --card-bg: #1e293b;
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
-  --accent: #38bdf8;
+  --accent: #38bdf8; */
   --font-family: "Inter", system-ui, sans-serif;
 }
 
@@ -66,7 +66,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* Simple mobile toggle (visual only) */
 .nav-toggle {
   display: none;
 }
@@ -195,6 +194,7 @@ header {
   display: flex;
   gap: 12px;
   align-items: center;
+  
 }
 
 .project-card .ibox {
@@ -227,11 +227,35 @@ footer {
 }
 
 .social-links a {
-  color: var(--text-muted);
+  
   text-decoration: none;
   padding: 8px 10px;
   border-radius: 6px;
 }
+
+.hamburger-menu{
+  display: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+
+}
+
+.bar {
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+  background-color: black;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 /* Responsive breakpoints */
 @media (max-width: 900px) {
@@ -243,9 +267,13 @@ footer {
   }
 }
 
-@media (max-width: 640px) {
+
+
+
+@media (max-width: 768px) {
   .nav-links {
     display: none;
+  
   }
   .nav-toggle {
     display: block;
@@ -259,6 +287,12 @@ footer {
   #projects {
     padding: 40px 16px;
   }
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
 }
 
 @media (max-width: 420px) {
