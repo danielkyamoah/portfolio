@@ -1,99 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <!-- logo name + navigation -->
-    <header>
-        <div>
-            <a href="#" aria-label="refresh-page">
-            <img src="" alt="portfolio-logo">
-            </a>
-        </div>
-     <!-- hamburger menu   -->
-        <nav>
-            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <div>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#projects">projects</a></li>
-                    <li><a href="#footer">contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>  
+    <header class="site-header">
+      <div class="brand-mark">
+        <a href="#" aria-label="refresh-page">
+          <img src="" alt="portfolio-logo" />
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button
+          class="hamburger-menu"
+          id="hamburger-menu"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#">home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#footer">contact</a></li>
+          <li class="nav-cta"><a href="#footer">Connect</a></li>
+        </ul>
+
+        <button
+          class="theme-toggle"
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          <span class="toggle-icon" aria-hidden="true">☀️</span>
+        </button>
+      </nav>
+    </header>
 
     <!-- call to action/ headline/ short intro -->
     <section id="hero">
-        <div>
-            <h1>Daniel Kofi Yamoah</h1>
-            <p>A web developer</p>
-        </div>
+      <div>
+        <h1>Daniel Kofi Yamoah</h1>
+        <p>A web developer</p>
+      </div>
     </section>
 
     <!-- clean grid/ pills showing HTML/CSS -->
     <section id="skills">
-        <h2>My Skills</h2>
-        <!-- card 1  -->
-         <div class="skill-card">
-            <div class="icon-box1">HTML</div>
-            <h3>HTML5</h3>
-            <p>Semantic markup, web accessibility and clean structural design</p>
-         </div>
-        <!-- card 2 -->
-          <div class="skill-card">
-            <div class="icon-box2">CSS</div>
-            <h3>CSS3 & Tailwind</h3>
-            <p>Responsive layout design, Flexbox, Grid and modern UI styling</p>
-         </div>
-        <!-- card 3 -->
-          <div class="skill-card">
-            <div class="icon-box3">JS</div>
-            <h3>Javascript</h3>
-            <p>ES6+ features, DOM manipulation, APIs and dynamic interactive logic.</p>
-         </div>
-        <!-- card 4 -->
-          <div class="skill-card">
-            <div class="icon-box4">React</div>
-            <h3>React</h3>
-            <p>Component architecture, state management, hooks and scalable apps</p>
-         </div>
+      <h2>My Skills</h2>
+      <div class="skill-card">
+        <div class="icon-box1">HTML</div>
+        <h3>HTML5</h3>
+        <p>Semantic markup, web accessibility and clean structural design</p>
+      </div>
+      <div class="skill-card">
+        <div class="icon-box2">CSS</div>
+        <h3>CSS3 & Tailwind</h3>
+        <p>Responsive layout design, Flexbox, Grid and modern UI styling</p>
+      </div>
+      <div class="skill-card">
+        <div class="icon-box3">JS</div>
+        <h3>Javascript</h3>
+        <p>
+          ES6+ features, DOM manipulation, APIs and dynamic interactive logic.
+        </p>
+      </div>
+      <div class="skill-card">
+        <div class="icon-box4">React</div>
+        <h3>React</h3>
+        <p>Component architecture, state management, hooks and scalable apps</p>
+      </div>
     </section>
 
-    <!-- grid with project card containers  -->
     <section id="projects">
-       <div class="project-card">
-        <div>
-            <img src="" alt="project-image">
-            <p></p>
-        </div>
-        <div>
-            img src="" alt="project-image">
-            <p></p>
-        </div>
-        <div></div>
-       </div>
+      <div class="section-heading">
+        <p class="eyebrow">Featured work</p>
+        <h2>My Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image image-one" aria-hidden="true"></div>
+          <div class="project-content">
+            <span class="project-tag">Portfolio</span>
+            <h3>Brand Showcase</h3>
+            <p>
+              A polished portfolio website built with HTML, CSS and JavaScript
+              to highlight work, skills and contact details.
+            </p>
+            <div class="project-meta">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image image-two" aria-hidden="true"></div>
+          <div class="project-content">
+            <span class="project-tag">Landing Page</span>
+            <h3>Startup Launch</h3>
+            <p>
+              A conversion-focused landing page with strong visual hierarchy and
+              clear calls-to-action for product promotion.
+            </p>
+            <div class="project-meta">
+              <span>UI</span>
+              <span>CSS</span>
+              <span>UX</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image image-three" aria-hidden="true"></div>
+          <div class="project-content">
+            <span class="project-tag">Dashboard</span>
+            <h3>Analytics App</h3>
+            <p>
+              An interactive dashboard concept designed to present metrics,
+              trends and performance summaries in a clean way.
+            </p>
+            <div class="project-meta">
+              <span>React</span>
+              <span>Charts</span>
+              <span>API</span>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <!-- links/contact links -->
     <footer id="footer">
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">GitHub</a>
-        </div>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">GitHub</a>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
