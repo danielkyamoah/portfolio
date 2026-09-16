@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -34,8 +40,8 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">skills</a></li>
           <li><a href="#projects">projects</a></li>
-          <li><a href="#footer">contact</a></li>
-          <li class="nav-cta"><a href="#footer">Connect</a></li>
+          <li><a href="#contact">contact</a></li>
+          <li class="nav-cta"><a href="#contact">Connect</a></li>
         </ul>
 
         <button
@@ -45,7 +51,9 @@
           aria-label="Toggle dark mode"
           aria-pressed="false"
         >
-          <span class="toggle-icon" aria-hidden="true">☀️</span>
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
         </button>
       </nav>
     </header>
@@ -59,29 +67,71 @@
     </section>
 
     <!-- clean grid/ pills showing HTML/CSS -->
-    <section id="skills">
-      <h2>My Skills</h2>
-      <div class="skill-card">
-        <div class="icon-box1">HTML</div>
-        <h3>HTML5</h3>
-        <p>Semantic markup, web accessibility and clean structural design</p>
+    <section id="skills" class="skills-section">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>What I work with</h2>
       </div>
-      <div class="skill-card">
-        <div class="icon-box2">CSS</div>
-        <h3>CSS3 & Tailwind</h3>
-        <p>Responsive layout design, Flexbox, Grid and modern UI styling</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="icon-box1">HTML</div>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-card">
+          <div class="icon-box2">CSS</div>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-card">
+          <div class="icon-box3">JS</div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <div class="icon-box4">React</div>
+          <h3>React</h3>
+        </div>
       </div>
-      <div class="skill-card">
-        <div class="icon-box3">JS</div>
-        <h3>Javascript</h3>
-        <p>
-          ES6+ features, DOM manipulation, APIs and dynamic interactive logic.
-        </p>
+    </section>
+
+    <section id="about" class="journey-section">
+      <div class="section-heading compact-heading">
+        <p class="eyebrow">Journey</p>
+        <h2>How I got here</h2>
       </div>
-      <div class="skill-card">
-        <div class="icon-box4">React</div>
-        <h3>React</h3>
-        <p>Component architecture, state management, hooks and scalable apps</p>
+
+      <div class="journey-grid">
+        <article class="journey-item">
+          <span class="journey-year">2022</span>
+          <div>
+            <h3>Started building</h3>
+            <p>
+              I began designing and coding small interfaces, learning the basics
+              of layout, responsiveness, and user experience.
+            </p>
+          </div>
+        </article>
+
+        <article class="journey-item">
+          <span class="journey-year">2023</span>
+          <div>
+            <h3>Improved my craft</h3>
+            <p>
+              I focused on cleaner structure, better spacing, and more polished
+              UI patterns using modern frontend workflows.
+            </p>
+          </div>
+        </article>
+
+        <article class="journey-item">
+          <span class="journey-year">2024</span>
+          <div>
+            <h3>Building real projects</h3>
+            <p>
+              I started turning ideas into responsive, production-ready pages
+              and interfaces that work across screen sizes.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -145,11 +195,25 @@
       </div>
     </section>
 
+    <section id="contact" class="contact-section">
+      <div class="contact-card">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something useful.</h2>
+        <p>
+          I’m available for freelance work, product ideas, and collaborative
+          projects.
+        </p>
+
+        <div class="contact-actions">
+          <a href="#" class="primary-link">Email me</a>
+          <a href="#" class="secondary-link">View resume</a>
+        </div>
+      </div>
+    </section>
+
     <footer id="footer">
       <div class="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">GitHub</a>
+        <span>© 2026 Daniel Kofi Yamoah</span>
       </div>
     </footer>
 

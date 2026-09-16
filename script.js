@@ -27,7 +27,6 @@ navItems.forEach((link) => {
 function updateTheme(isDark) {
     document.body.classList.toggle("dark-mode", isDark);
     themeToggle.setAttribute("aria-pressed", String(isDark));
-    themeToggle.querySelector(".toggle-icon").textContent = isDark ? "🌙" : "☀️";
 }
 
 const savedTheme = localStorage.getItem("portfolio-theme");
