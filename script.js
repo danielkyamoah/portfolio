@@ -29,10 +29,12 @@ function updateTheme(isDark) {
     themeToggle.setAttribute("aria-pressed", String(isDark));
 }
 
-const savedTheme = localStorage.getItem("portfolio-theme");
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const initialTheme = savedTheme ? savedTheme === "dark" : prefersDark;
-updateTheme(initialTheme);
+function getInitialTheme() {
+    const savedTheme = localStorage.getItem("portfolio-theme");
+    return savedTheme === "dark";
+}
+
+updateTheme(getInitialTheme());
 
 themeToggle.addEventListener("click", () => {
     const isDark = !document.body.classList.contains("dark-mode");
